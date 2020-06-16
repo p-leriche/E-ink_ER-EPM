@@ -83,10 +83,15 @@ paint.DrawFilledRectangle(5, 3, 35, 33, COLORED);
 A (50%) shaded rectangle is the same except that you don't need to specify COLORED or UNCOLORED as it would make no perceptible difference:
 paint.DrawShadedRectangle(5, 3, 35, 33);
 
+For a speckled rectangle (random pixels COLORED), optionally specify the density as a percent of COLORED pixels (default 50%). The following are equivalent:
+paint.DrawSpeckledRectangle(5, 3, 35, 33);
+paint.DrawSpeckledRectangle(5, 3, 35, 33, 50);
+
 For a circle, specify the coordinates of the centre, and the radius:
 paint.DrawCircle(20, 18, 15, COLORED);
 paint.DrawFilledCircle(20, 18, 15, COLORED);
 paint.DrawShadedCircle(20, 18, 15);
+paint.DrawSpeckledCircle(20, 18, 15, 50); // (The density defaults to 50 if not given)
 
 (The centre in these examples is (20, 18) and the radius is 15.)
 
