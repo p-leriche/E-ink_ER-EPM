@@ -124,7 +124,7 @@ void Paint::DrawShadedPixel(int x, int y) {
 //  DrawPixel(x, y, ((x & 3) | (y & 3)));
 }
 
-void Paint::DrawSpeckledPixel(int x, int y, int density=50) {
+void Paint::DrawSpeckledPixel(int x, int y, int density) {
 	density = density < 0? 0: density > 100? 100: density;
 	DrawPixel(x, y, (random(99) >= density));
 }
