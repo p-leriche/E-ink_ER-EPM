@@ -4,7 +4,7 @@ EastRising Technology Co.,LTD
 ****************************************************/
 
 #include "epdif.h"
-#include <spi.h>
+#include <SPI.h>
 
 EpdIf::EpdIf() {
 };
