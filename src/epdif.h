@@ -6,7 +6,7 @@ EastRising Technology Co.,LTD
 #ifndef EPDIF_H
 #define EPDIF_H
 
-#include <arduino.h>
+#include <Arduino.h>
 
 // Pin definition
 #define RST_PIN         8
